@@ -58,6 +58,6 @@
     <Folder Include="Properties" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Sample.sql" />
+    <Build Include="Lag_Window_Function.sql" />
   </ItemGroup>
 </Project>
