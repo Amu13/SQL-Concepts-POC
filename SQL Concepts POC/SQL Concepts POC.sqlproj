@@ -54,10 +54,32 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="SQL Keys" />
+    <Folder Include="SQL Commands" />
+    <Folder Include="TCL" />
+    <Folder Include="DQL" />
+    <Folder Include="TSQL" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Lag_Window_Function.sql" />
     <Build Include="Coalesce.sql" />
     <Build Include="RowNumber.sql" />
+    <Build Include="SQL Keys\SuperKey.sql" />
+    <Build Include="SQL Keys\SuperCandidatePrimary.sql" />
+    <Build Include="CTE.sql" />
+    <Build Include="SQL Keys\ForeignKey.sql" />
+    <Build Include="SQL Commands\DDLCommands.sql" />
+    <Build Include="SQL Commands\DMLCommands.sql" />
+    <Build Include="SQL Commands\MergeDMLCommand.sql" />
+    <Build Include="MergeWithLocks.sql" />
+    <Build Include="TCL\Locking mechanism.sql" />
+    <Build Include="DQL\GroupByHaving.sql" />
+    <Build Include="DQL\DQLCommands.sql" />
+    <Build Include="DQL\GroupByWhere.sql" />
+    <Build Include="TSQL\Datatypes.sql" />
+    <Build Include="TSQL\TSQLExamples.sql" />
+    <Build Include="SQL Keys\UniqueKey.sql" />
+    <Build Include="DQL\SqlExecutionOrder.sql" />
+    <Build Include="DataTimeOffset.sql" />
   </ItemGroup>
 </Project>
